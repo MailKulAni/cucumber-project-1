@@ -7,42 +7,42 @@ import io.cucumber.java.en.When;
 
 public class Login {
 	
-	@Given("any logged-out user")
+	@Given("^any logged-out user$")
 	public void loggedoutUser() {
 		System.out.println("make sure that user is logged-out user");
 	}
 	
-	@And("user lands on login page")
+	@And("^user lands on login page$")
 	public void userLandsOnLoginPage() {
 		System.out.println("user lands on login paage");
 	}
 	
-	@And("such user has valid user credentials")
+	@And("^such user has valid user credentials$")
 	public void makeSureToUseValidCredentialsToLogin() {
 		System.out.println("make sure to use valid user credentials for login purpose");
 	}
 
-	@When("user enters valid username")
-	public void userEntersValidUserName() {
-		System.out.println("user enters valid username");
+	@When("user enters valid username: {string}")
+	public void userEntersValidUserName(String username) {
+		System.out.println("user enters valid username: "+username);
 	}
 	
-	@And("user enters valid password")
-	public void userEntersValidPassword() {
-		System.out.println("user enters valid pwd");
+	@And("user enters valid password: {string}")
+	public void userEntersValidPassword(String pwd ) {
+		System.out.println("user enters valid pwd: "+pwd);
 	}
 	
-	@And("user clicks on login button")
+	@And("^user clicks on login button$")
 	public void clickOnLoginbtn() {
 		System.out.println("User clicks on login button");
 	}
 	
-	@Then("user should be able to login successfully")
+	@Then("^user should be able to login successfully$")
 	public void loginSuccess() {
 		System.out.println("user should be able to login successfully");
 	}
 
-	@And("user should land on profile page")
+	@And("^user should land on profile page$")
 	public void profilePageAfterLoginSuccess() {
 		System.out.println("land on profile page after successful login");
 	}
