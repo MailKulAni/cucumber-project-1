@@ -1,4 +1,4 @@
-package com.ani.runners;
+package com.ani.login;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
