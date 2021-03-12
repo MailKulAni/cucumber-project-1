@@ -6,7 +6,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		dryRun=true
+		dryRun=true,
+		strict=false
 )
 public class LoginRunner {
 	
