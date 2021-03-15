@@ -7,7 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		dryRun=true,
-		strict=false
+		//strict=false,
+		features= {"src/test/resources/com/ani/login"}
 )
 public class LoginRunner {
 	
