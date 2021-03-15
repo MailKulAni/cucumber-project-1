@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		dryRun=true,
 		//strict=false,
-		monochrome=true
+    monochrome=true,
+		features= {"src/test/resources/com/ani/login"}
 )
 public class LoginRunner {
 	
