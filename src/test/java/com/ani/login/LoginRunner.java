@@ -10,10 +10,10 @@ import io.cucumber.junit.CucumberOptions;
 		//strict=false,
 		monochrome=true,
 		features= {"src/test/resources/com/ani/login"},
-		glue = {"src/test/java"},
+		//glue = {"src/test/java"},
 		plugin = {
 				"pretty",
-				"html:target/site/html-report",
+				"html:target/site/html-report.html",
 				"json:target/cucumber1.json"
 		}
 )

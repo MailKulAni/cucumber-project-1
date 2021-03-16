@@ -1,5 +1,8 @@
 package com.ani.login;
 
+import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -80,6 +83,8 @@ public class Login {
 	public void behaviour(String behaviour) {
 		//System.out.println("user should "+behaviour+" able to login successfully");
 		//System.out.println("-----------------------");
+		//Assert.assertEquals(false, true, "unable to perform login...");
+		Assertions.fail("failing this case");
 	}
 	
 }
