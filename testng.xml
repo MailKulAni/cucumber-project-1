@@ -3,7 +3,7 @@
 <suite name="BDD Test">
    <test name="LoginRunner">
       <classes>
-         <class name="com.ani.login.LoginTestngRunnerTest" />
+         <class name="com.ani.login.LoginTestngRunnerTest"/>
       </classes>
    </test>
    <!-- Test -->
